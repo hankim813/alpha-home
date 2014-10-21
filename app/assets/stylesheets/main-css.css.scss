@@ -1,1 +1,309 @@
+/* Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Lily+Script+One|Squada+One|Exo:500);
+
+
+/* General */
+
+body {
+  padding-top: 70px;
+  -webkit-font-smoothing: antialiased;
+}
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+/* Navbar */
+
+$navbar-height: 70px;
+$navbar-default-bg: #FFF;
+$navbar-default-brand-color: #04C2E6;
+$navbar-default-link-color: #2E2E2E;
+$navbar-default-link-hover-color: #1CCAEC;
+
+.container-fluid {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-family: 'Squada One', cursive;
+  font-size: 2.8em !important;
+}
+
+.nav li {
+  font-family: 'Exo', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  height: 698px;
+  background-image: url('alpha-home-clean-kitchen.jpg');
+  background-size: cover;
+}
+
+.jumbotron-container h1 {
+  text-align: center;
+  color: #FFF !important;
+  font-family: 'Lily Script One', cursive;
+  font-size: 5em !important;
+  padding-top: 5%;
+}
+
+.jumbotron-container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.jumbotron-container p {
+  text-align: center;
+  color: #FFF !important;
+  font-size: 2em !important;
+}
+
+$btn-primary-bg: #2566FC;
+$btn-primary-color: #FFF;
+
+.btn-lg {
+  padding: 25px 70px !important;
+  letter-spacing: 1px;
+  margin: 15px 0;
+  border: none !important;
+}
+
+/* Value Proposition */
+
+.value-container-bg {
+  background-color: #FFF;
+  width: 100%;
+  height: 400px;
+  padding-top: 3%;
+}
+
+
+.value-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.value-box {
+  width: 33%;
+  margin: 2% 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding: 0 2%;
+}
+
+.value-box h1 {
+  text-transform: uppercase;
+  color: #424242;
+  font-size: 1.5em;
+}
+
+.value-box p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.value-box i {
+  font-size: 6em;
+  color: #04C2E6;
+  margin-bottom: 3%;
+}
+
+/* How It Works */
+
+.how-container-bg {
+  width: 100%;
+  height: 950px;
+  padding-top: 8%;
+  background-color: #018EA8;
+}
+
+.how-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.how-box {
+  width: 100%;
+  margin: 3% 0;
+  float: left;
+}
+
+.how-box-img {
+  width: 30%;
+  margin: 0;
+  display: block;
+  float: left;
+}
+.how-box-img i {
+  font-size: 13em;
+  color: #73DDF1;
+  margin: 0 8% 5% 8%;
+}
+
+.how-box-step {
+  width: 70%;
+  margin: 0;
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+.how-box h2 {
+  color: #FFF;
+  font-size: 1.7em;
+  padding: 0 5%;
+}
+
+.step-circle {
+  border-radius: 50%;
+  background-color: #FFF;
+  width: 80px;
+  height: 80px;
+  color: #73DDF1;
+  font-size: 2.3em;
+  text-align: center;
+  line-height: 80px;
+  margin: 0 auto;
+}
+
+.how-jumbotron {
+  background-image: url('alpha-home-cleaning.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  padding-top: 8%;
+}
+
+.how-jumbotron h2 {
+  text-align: center;
+  color: #FFF;
+  font-size: 4em;
+  margin: 0;
+  font-family: 'Lily Script One', cursive;
+  text-shadow: 1px 1px 2px ;
+}
+
+.how-jumbotron-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cta {
+  width: 100%;
+  margin: 3% auto;
+  text-align: center;
+}
+
+.cta div {
+  margin: 0 2%;
+  display: inline-block;
+}
+
+/* Footer */
+
+.footer-container-bg {
+  background-color: #1D1D1D;
+  width: 100%;
+  height: 500px;
+  padding-top: 3%;
+}
+
+.footer-container {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.footer-container div {
+  width: 24%;
+  margin: 0 0 2% 0;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.footer-container div ul {
+  color: #FFF;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container div ul li {
+  margin: 2% 0;
+  font-size: 1.2em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.footer-container div i {
+  font-size: 3em;
+  float: right;
+  margin: 0 0 0 3%;
+  padding: 0;
+}
+
+hr {
+  border-top: 1px solid #F2F2F2;
+  width: 97.3%;
+  float: left;
+  padding: 0;
+}
+
+#bottom-links {
+  width: 98%;
+  display: inline-block;
+}
+
+#footer-links {
+  width: 50%;
+  float: left;
+  text-align: left;
+  display: inline-block;
+}
+
+#footer-links a {
+  margin: 0 2% 0 0;
+  color: #6E6E6E;
+  font-size: 1.2em;
+}
+
+#footer-links a:hover {
+  text-decoration: none;
+}
+
+#copyright {
+  width: 50%;
+  float: right;
+  text-align: right;
+  display: inline-block;
+}
+
+#copyright i {
+  margin: 0 1%;
+  color: #6E6E6E;
+  font-size: 1.2em;
+  display: inline;
+}
+
+
 @import 'bootstrap';
