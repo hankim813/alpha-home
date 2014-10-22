@@ -24,6 +24,15 @@ body {
     clear: both;
 }
 
+a, .btn {
+  transition: all 0.2s ease;
+}
+
+a:hover, .btn:hover {
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
 /* Navbar */
 
 $navbar-height: 70px;
@@ -59,7 +68,7 @@ $navbar-default-link-hover-color: #1CCAEC;
   text-align: center;
   color: #FFF !important;
   font-family: 'Lily Script One', cursive;
-  font-size: 5em !important;
+  font-size: 6em !important;
   padding-top: 5%;
 }
 
@@ -123,6 +132,12 @@ $btn-primary-color: #FFF;
   font-size: 6em;
   color: #04C2E6;
   margin-bottom: 3%;
+  transition: all 0.2s ease;
+}
+
+.value-box i:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
 /* How It Works */
@@ -155,6 +170,12 @@ $btn-primary-color: #FFF;
   font-size: 13em;
   color: #73DDF1;
   margin: 0 8% 5% 8%;
+  transition: all 0.2s ease;
+}
+
+.how-box-img i:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
 .how-box-step {
@@ -216,6 +237,82 @@ $btn-primary-color: #FFF;
   display: inline-block;
 }
 
+/* Testimonials */
+
+.testimonials-container-bg {
+  width: 100%;
+  height: 400px;
+  background-color: #FFF;
+  padding-top: 3%;
+}
+
+.testimonials-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.testimonials-container h2 {
+  text-transform: uppercase;
+  color: #424242;
+  font-size: 2em;
+  text-align: center;
+}
+
+.testimonials-container i {
+  font-size: 4em;
+  color: #04C2E6;
+}
+
+.quote-container {
+  width: 100%;
+  text-align: center;
+}
+
+.quote-box {
+  width: 30%;
+  padding-top: 3%;
+  margin: 0 1%;
+  display: inline-block;
+}
+
+.quote-box p {
+  color: #777676;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.quote-box img {
+  width: 55px;
+  display: block;
+  margin: 0 auto;
+}
+
+#customer {
+  font-size: 1em;
+  text-align: center;
+}
+
+.well-sm {
+  height: 125px !important;
+  transition: all 0.2s ease;
+}
+
+.well-sm:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.carousel-indicators {
+  margin-bottom: -3%;
+}
+
+$carousel-indicator-border-color: #73DDF1;
+$carousel-indicator-active-bg: #46D4EF;
+
+/* Services Page */
+
+
+
 /* Footer */
 
 .footer-container-bg {
@@ -229,6 +326,17 @@ $btn-primary-color: #FFF;
   width: 70%;
   margin: 0 auto;
   padding-top: 3%;
+}
+
+.footer-container a {
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.footer-container a:hover {
+  text-decoration: none;
+  color: #ADADAD;
+  transition: all 0.2s ease;
 }
 
 .footer-container div {
@@ -255,11 +363,18 @@ $btn-primary-color: #FFF;
   font-weight: bold;
 }
 
-.footer-container div i {
+.footer-container div a i {
   font-size: 3em;
   float: right;
-  margin: 0 0 0 3%;
+  margin: 0 0 0 10%;
   padding: 0;
+  transition: all 0.2s ease;
+}
+
+.footer-container div a i:hover {
+  color: #ADADAD;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
 hr {
@@ -285,10 +400,13 @@ hr {
   margin: 0 2% 0 0;
   color: #6E6E6E;
   font-size: 1.2em;
+  transition: all 0.2s ease;
 }
 
 #footer-links a:hover {
   text-decoration: none;
+  color: #ADADAD;
+  transition: all 0.2s ease;
 }
 
 #copyright {
