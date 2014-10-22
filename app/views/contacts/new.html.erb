@@ -1,0 +1,45 @@
+<div class="contact-container-bg">
+  <div class="contact-container">
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
+
+    <h1>Contact Us</h1>
+    <p>We love hearing from you. Tell us what's on your mind.</p>
+    <br>
+    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+
+      <div class="input-group">
+         <span class="input-group-addon"><%= f.label :name %></span>
+         <%= f.text_field :name, class: "form-control", :autofocus => true, :required => true, :placeholder => "How should we address you?" %>
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon"><%= f.label :email %></span>
+        <%= f.text_field :email, class: "form-control", :required => true, :placeholder => "How can we get back to you?" %>
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon"><%= f.label :message %></span>
+        <%= f.text_area :message, rows: 12, class: "form-control", :required => true, :placeholder => "What's on your mind?" %>
+      </div>
+
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+
+      <div class="form-group">
+        <div align="center">
+          <%= f.button :submit, 'Send Message', class: "btn btn-success", data: { disable_with: "<i class='fa fa-circle-o-notch fa-spin'> Sending...</i>"}, id: "contact-send-button" %>
+        </div>
+      </div>
+    <% end %>
+
+  </div><!-- Contact Container -->
+</div><!-- Contact Container BG -->
+
+<script>
+  $(document).ready(function() {
+    $('#contact').addClass('active')
+  })
+</script>

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   get 'services' => 'pages#services'
+  get 'faq' => 'pages#faq'
 
   get 'services/cleaning' => 'services#cleaning'
   get 'services/carwash' => 'services#carwash'
@@ -10,6 +11,10 @@ Rails.application.routes.draw do
   get 'services/plumbing' => 'services#plumbing'
   get 'services/security' => 'services#security'
   get 'services/painting' => 'services#painting'
+
+  # Contact Form
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

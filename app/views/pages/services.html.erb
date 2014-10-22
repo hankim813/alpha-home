@@ -44,7 +44,21 @@
         </div>
       </a><!-- Cooking -->
 
+      <a href="/services/security" class="visibility-hidden">
+        <div class="service-box" id="security">
+          <%= image_tag 'security-icon.png', alt: "alpha home security" %>
+          <h2>Security Guards</h2>
+        </div>
+      </a><!-- Security Guards -->
+
       <a href="/services/security">
+        <div class="service-box" id="security">
+          <%= image_tag 'security-icon.png', alt: "alpha home security" %>
+          <h2>Security Guards</h2>
+        </div>
+      </a><!-- Security Guards -->
+
+      <a href="/services/security" class="visibility-hidden">
         <div class="service-box" id="security">
           <%= image_tag 'security-icon.png', alt: "alpha home security" %>
           <h2>Security Guards</h2>
@@ -54,3 +68,9 @@
     </div><!-- Service Box Container -->
   </div><!-- Services Container -->
 </div><!-- Services Container BG -->
+
+<script>
+  $(document).ready(function() {
+    $('#services').addClass('active')
+  })
+</script>

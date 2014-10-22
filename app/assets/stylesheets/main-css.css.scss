@@ -1,7 +1,7 @@
 /* Fonts */
 
 @import url(http://fonts.googleapis.com/css?family=Lily+Script+One|Squada+One|Exo:500);
-
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
 /* General */
 
@@ -30,8 +30,12 @@ a, .btn {
 
 a:hover, .btn:hover {
   transition: all 0.2s ease;
-  text-decoration: none;
+  text-decoration: none !important;
 }
+
+.hidden { display: none; }
+
+.visibility-hidden { visibility: hidden;}
 
 /* Navbar */
 
@@ -40,6 +44,8 @@ $navbar-default-bg: #FFF;
 $navbar-default-brand-color: #04C2E6;
 $navbar-default-link-color: #2E2E2E;
 $navbar-default-link-hover-color: #1CCAEC;
+$navbar-default-link-active-color: #1CCBEC;
+$navbar-default-link-active-bg: transparent;
 
 .navbar {
   box-shadow: 1px 1.4px 2px #7A7A7A;
@@ -139,6 +145,8 @@ $btn-primary-color: #FFF;
 }
 
 .value-box i:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
   transition: all 0.2s ease;
 }
@@ -177,6 +185,8 @@ $btn-primary-color: #FFF;
 }
 
 .how-box-img i:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
   transition: all 0.2s ease;
 }
@@ -301,6 +311,8 @@ $btn-primary-color: #FFF;
 }
 
 .well-sm:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
   transition: all 0.2s ease;
 }
@@ -381,6 +393,8 @@ $carousel-indicator-active-bg: #46D4EF;
 
 .service-box:hover {
   transition: all 0.2s ease;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -389,6 +403,90 @@ $carousel-indicator-active-bg: #46D4EF;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+/* Contact */
+
+.contact-container-bg {
+  width: 100%;
+  background-image: url('writetous.jpg');
+  background-size: cover;
+  background-color: #FFF;
+  padding: 3% 0;
+}
+
+.contact-container {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.contact-container h1 {
+  font-size: 3em;
+  text-align: center;
+  color: #424242;
+  margin: 1% 0;
+}
+
+.contact-container p {
+  font-size: 1.2em;
+  text-align: center;
+  color: #7B7B7B;
+}
+
+.input-group {
+  margin-bottom: 2%;
+}
+
+.contact-container form {
+  padding: 2%;
+}
+
+.contact-container label {
+  padding: 0 !important;
+  width: 75px !important;
+  text-align: center !important;
+}
+
+#contact-send-button {
+  border: none;
+  padding: 15px 75px;
+  margin: 2% 0;
+}
+
+#contact-send-button i {
+  display: inline-block !important;
+}
+
+$input-color-placeholder: #C3C3C3;
+
+/* FAQ */
+
+.faq-container-bg {
+  width: 100%;
+  background-image: url('sky.jpg');
+  background-size: cover;
+  background-color: #FFF;
+  padding: 3% 0;
+  height: 900px;
+}
+
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faq-container h1 {
+  font-size: 3em;
+  text-align: center;
+  color: #424242;
+  margin: 1% 0;
+}
+
+.faq-container p {
+  font-size: 1.2em;
+  text-align: center;
+  color: #7B7B7B;
 }
 
 /* Footer */
@@ -452,6 +550,8 @@ $carousel-indicator-active-bg: #46D4EF;
 .footer-container div a i:hover {
   color: #ADADAD;
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transition: all 0.2s ease;
 }
 
