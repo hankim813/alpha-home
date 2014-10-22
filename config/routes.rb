@@ -3,6 +3,14 @@ Rails.application.routes.draw do
 
   get 'services' => 'pages#services'
 
+  get 'services/cleaning' => 'services#cleaning'
+  get 'services/carwash' => 'services#carwash'
+  get 'services/chefs' => 'services#chefs'
+  get 'services/electric' => 'services#electric'
+  get 'services/plumbing' => 'services#plumbing'
+  get 'services/security' => 'services#security'
+  get 'services/painting' => 'services#painting'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

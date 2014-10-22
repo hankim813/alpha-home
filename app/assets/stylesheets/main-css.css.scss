@@ -41,6 +41,9 @@ $navbar-default-brand-color: #04C2E6;
 $navbar-default-link-color: #2E2E2E;
 $navbar-default-link-hover-color: #1CCAEC;
 
+.navbar {
+  box-shadow: 1px 1.4px 2px #7A7A7A;
+}
 .container-fluid {
   width: 85%;
   margin: 0 auto;
@@ -311,7 +314,82 @@ $carousel-indicator-active-bg: #46D4EF;
 
 /* Services Page */
 
+.services-container-bg {
+  width: 100%;
+  background-color: #FFF;
+  padding: 3% 0;
+}
 
+.services-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.services-container h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #424242;
+}
+
+.service-box-container {
+  width: 80%;
+  margin: 3% auto 0 auto;
+}
+
+.service-box {
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  padding-top: 5%;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin: 0 1% 2% 1%;
+}
+
+#cleaning {
+  background-image: url('cleaning.jpg');
+}
+
+#carwash {
+  background-image: url('mercedes.jpg');
+}
+
+#plumbing {
+  background-image: url('bathroom.jpg');
+}
+
+#electric {
+  background-image: url('lighting.jpg');
+}
+
+#painting {
+  background-image: url('painting.jpg');
+}
+
+#chefs {
+  background-image: url('kenyan-food.jpg');
+  background-size: cover;
+}
+
+#security {
+  background-image: url('security-gate.jpg');
+  background-size: cover;
+}
+
+
+.service-box:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.05);
+}
+
+.service-box h2 {
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 
 /* Footer */
 
